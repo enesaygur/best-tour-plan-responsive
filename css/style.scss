@@ -1,0 +1,152 @@
+:root {
+    --bg-color: #f5fafe;
+    --primary-color: #0a223d;
+    --secondary-color: #ec1f46;
+    --txt-color-dark: #333333;
+    --txt-color-light: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+    max-width: 1440px;
+    margin: 0px auto;
+    font-family: 'Mulish', sans-serif;
+}
+.container {
+    width: 100%;
+}
+
+/*Utility*/
+ul {
+    list-style: none;
+}
+.bg-primary {
+    background: var(--primary-color);
+    color: #ffffff;
+}
+.bg-light {
+    background: var(--bg-color);
+}
+.bg-secondary {
+    background: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.btn {
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: 0px 6px 6px 0px;
+    margin-left: -5px;
+    margin-top: -2px;
+    border: 3px solid var(--secondary-color);
+}
+.logo {
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+
+    .span {
+        color: #ec1f46;
+    }
+}
+
+#navbar {
+    .navtop {
+        color: var(--txt-color-dark);
+        height: 2.5rem;
+        & > div {
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            font-size: 0.75rem;
+            text-align: center;
+        }
+        ul {
+            display: flex;
+
+            li {
+                padding: 0.5rem 1rem;
+
+                i {
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+
+    .navbar {
+        .search-bar {
+            input[type='text'] {
+                box-sizing: border-box;
+                padding-left: 1rem;
+                height: 2.5rem;
+                width: 15rem;
+            }
+
+            input {
+                border-radius: 0.6px;
+            }
+
+            button {
+                color: #ffffff;
+            }
+        }
+
+        & > div {
+            height: 12rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-content: center;
+            justify-items: center;
+        }
+
+        .cart {
+            display: flex;
+            flex-direction:row;
+            width:100%;
+            padding-left: 1rem;
+            flex:4;
+            align-items: center;
+            i,p,img{
+                margin-left: 1.5rem;
+            }
+            img {
+                height: 3rem;
+                width: 3rem;
+                border-radius: 50%;
+            }
+
+        }
+    }   
+}
+
+ .navbottom {
+        height: 5rem;
+        & > div {
+            height: 100%;
+            ul {
+                justify-content: center;
+            }
+            li {
+                margin: 1.5rem 0px;
+            }
+        }
+        ul {
+            display: flex;
+
+            li {
+                padding-left: 3rem;
+            }
+        }
+    }
