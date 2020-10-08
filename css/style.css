@@ -149,7 +149,9 @@ a {
           align-items: center;
 }
 
-#navbar .navbar .cart i, #navbar .navbar .cart p, #navbar .navbar .cart img {
+#navbar .navbar .cart i,
+#navbar .navbar .cart p,
+#navbar .navbar .cart img {
   margin-left: 1.5rem;
 }
 
@@ -168,22 +170,16 @@ a {
 }
 
 .navbottom > div ul {
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.navbottom > div li {
-  margin: 1.5rem 0px;
-}
-
-.navbottom ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.navbottom ul li {
-  padding-left: 3rem;
+.navbottom > div li {
+  padding: 1.5rem 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
