@@ -68,10 +68,11 @@ a {
 
 #navbar .navtop {
   color: var(--txt-color-dark);
-  height: 2.5rem;
+  height: 3.75rem;
 }
 
 #navbar .navtop > div {
+  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr 2fr;
@@ -120,7 +121,7 @@ a {
 }
 
 #navbar .navbar > div {
-  height: 12rem;
+  height: 7.5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
