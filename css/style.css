@@ -22,6 +22,7 @@ body {
 
 .container {
   width: 100%;
+  padding: 0rem 10.3125rem;
 }
 
 /*Utility*/
@@ -36,10 +37,36 @@ ul {
 
 .bg-light {
   background: var(--bg-color);
+  color: #333333;
 }
 
 .bg-secondary {
   background: var(--secondary-color);
+  color: #ffffff;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-clear {
+  clear: both;
+}
+
+.py-1 {
+  padding: 1rem 1rem;
+}
+
+.py-2 {
+  padding: 1rem 1.5rem;
+}
+
+.py-3 {
+  padding: 1rem 2rem;
+}
+
+.py-4 {
+  padding: 1rem 3rem;
 }
 
 a {
@@ -47,7 +74,14 @@ a {
   color: #ffffff;
 }
 
-.btn {
+.btn-booking {
+  width: 15.3125rem;
+  height: 2.8125rem;
+  border: 3px solid var(--secondary-color);
+  border-radius: 0.25rem;
+}
+
+.btn-search {
   width: 4rem;
   height: 2.5rem;
   border-radius: 0px 6px 6px 0px;
@@ -62,10 +96,6 @@ a {
   line-height: 1.5rem;
 }
 
-.logo .span {
-  color: #ec1f46;
-}
-
 #navbar .navtop {
   color: var(--txt-color-dark);
   height: 3.75rem;
@@ -73,13 +103,12 @@ a {
 
 #navbar .navtop > div {
   height: 100%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr 2fr;
       grid-template-columns: 2fr 1fr 2fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -104,9 +133,11 @@ a {
   padding-right: 1rem;
 }
 
+#navbar .navbar {
+  height: 7.5rem;
+}
+
 #navbar .navbar .search-bar input[type='text'] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding-left: 1rem;
   height: 2.5rem;
   width: 15rem;
@@ -122,13 +153,13 @@ a {
 
 #navbar .navbar > div {
   height: 7.5rem;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-flex-line-pack: center;
       align-content: center;
-  justify-items: center;
 }
 
 #navbar .navbar .cart {
@@ -161,25 +192,124 @@ a {
   border-radius: 50%;
 }
 
-.navbottom {
+#navbar .navbottom {
   height: 5rem;
 }
 
-.navbottom > div {
+#navbar .navbottom > div {
   height: 100%;
 }
 
-.navbottom > div ul {
+#navbar .navbottom > div ul {
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 0rem 10.3125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.navbottom > div li {
-  padding: 1.5rem 1.5rem;
+#navbar .navbottom > div ul li {
+  width: 100%;
+  padding: 1.5rem 1rem;
+}
+
+.bread-crump {
+  height: 3.125rem;
+  padding: 1rem 0rem;
+}
+
+#home-content .hotel-name {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 6.25rem;
+}
+
+#home-content .hotel-name .stars {
+  color: #f2994a;
+}
+
+#home-content .hotel-name .hotel {
+  font-size: 1.5rem;
+  line-height: 30.12px;
+  width: 35rem;
+  height: 2rem;
+}
+
+#home-content .hotel-name .hotel span {
+  margin: 1rem;
+}
+
+#home-content .hotel-name .flash-offer {
+  height: 1.25rem;
+  width: 4.375rem;
+  font-size: 0.625rem;
+  line-height: 12.55px;
+  text-align: center;
+  padding: 0.25rem 0.35rem;
+  border-radius: 3px;
+}
+
+#home-content .hotel-name .hotel-name-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+}
+
+#home-content .hotel-name .user-ratings {
+  text-align: center;
+  padding: 0.5rem;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 4.0625rem;
+  height: 2.8125rem;
+  border-radius: 4px;
+}
+
+#home-content .home-content-a {
+  padding-top: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.6875rem;
+}
+
+#home-content .home-content-a div img {
+  height: 28.125rem;
+  width: 45.5rem;
+  border-radius: 0.5rem;
+}
+
+#home-content .home-content-a .booking {
+  font-family: 'Nunito', sans-serif;
+  border-radius: 0.5rem;
+  width: 21.875rem;
+  height: 13.125rem;
+  padding: 1.625rem 1.8125rem;
+}
+
+#home-content .home-content-a .booking .booking-price {
+  padding-left: 0rem;
+}
+
+#home-content .home-content-a .booking .person-room {
+  text-align: right;
+}
+
+#home-content .home-content-a .booking .person-room i {
+  padding-right: 1rem;
+}
+
+#home-content .home-content-a .map {
+  margin-top: 1.6875rem;
+  width: 21.875rem;
+  height: 13.125rem;
+  background-color: skyblue;
 }
 /*# sourceMappingURL=style.css.map */

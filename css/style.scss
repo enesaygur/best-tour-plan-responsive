@@ -19,6 +19,7 @@ body {
 }
 .container {
     width: 100%;
+    padding: 0rem 10.3125rem;
 }
 
 /*Utility*/
@@ -31,16 +32,45 @@ ul {
 }
 .bg-light {
     background: var(--bg-color);
+    color: #333333;
 }
 .bg-secondary {
     background: var(--secondary-color);
+    color: #ffffff;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-clear {
+    clear: both;
+}
+
+.py-1 {
+    padding: 1rem 1rem;
+}
+.py-2 {
+    padding: 1rem 1.5rem;
+}
+.py-3 {
+    padding: 1rem 2rem;
+}
+.py-4 {
+    padding: 1rem 3rem;
 }
 
 a {
     text-decoration: none;
     color: #ffffff;
 }
-.btn {
+.btn-booking {
+    width: 15.3125rem;
+    height: 2.8125rem;
+    border: 3px solid var(--secondary-color);
+    border-radius: 0.25rem;
+}
+.btn-search {
     width: 4rem;
     height: 2.5rem;
     border-radius: 0px 6px 6px 0px;
@@ -52,10 +82,6 @@ a {
     font-family: 'Luckiest Guy', sans-serif;
     font-size: 1.5rem;
     line-height: 1.5rem;
-
-    .span {
-        color: #ec1f46;
-    }
 }
 
 #navbar {
@@ -64,9 +90,10 @@ a {
         height: 3.75rem;
         & > div {
             height: 100%;
+            width: 100%;
             display: grid;
             grid-template-columns: 2fr 1fr 2fr;
-            justify-content: center;
+            justify-items: flex-start;
             align-items: center;
         }
         p {
@@ -87,9 +114,9 @@ a {
     }
 
     .navbar {
+        height: 7.5rem;
         .search-bar {
             input[type='text'] {
-                box-sizing: border-box;
                 padding-left: 1rem;
                 height: 2.5rem;
                 width: 15rem;
@@ -106,10 +133,10 @@ a {
 
         & > div {
             height: 7.5rem;
+            width: 100%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             align-content: center;
-            justify-items: center;
         }
 
         .cart {
@@ -119,11 +146,13 @@ a {
             padding-left: 1rem;
             flex: 4;
             align-items: center;
-            i,
+
+            & i,
             p,
             img {
                 margin-left: 1.5rem;
             }
+
             img {
                 height: 3rem;
                 width: 3rem;
@@ -131,19 +160,108 @@ a {
             }
         }
     }
+    .navbottom {
+        height: 5rem;
+        & > div {
+            height: 100%;
+            ul {
+                height: 100%;
+                padding: 0rem 10.3125rem;
+                display: flex;
+                li {
+                    width: 100%;
+                    padding: 1.5rem 1rem;
+                }
+            }
+        }
+    }
 }
 
-.navbottom {
-    height: 5rem;
-    & > div {
-        height: 100%;
-        ul {
-            height: 100%;
-            justify-content: center;
-            display: flex;
+.bread-crump {
+    height: 3.125rem;
+    padding: 1rem 0rem;
+}
+
+#home-content {
+    .hotel-name {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 6.25rem;
+
+        .stars {
+            color: #f2994a;
         }
-        li {
-            padding: 1.5rem 1.5rem;
+        .hotel {
+            font-size: 1.5rem;
+            line-height: 30.12px;
+            width: 35rem;
+            height:2rem ;
+
+            & span{
+                margin:1rem;
+            }
+        }
+
+        .flash-offer {
+            height: 1.25rem;
+            width: 4.375rem;
+            font-size: 0.625rem;
+            line-height: 12.55px;
+            text-align: center;
+            padding: 0.25rem 0.35rem;
+            border-radius: 3px;
+        }
+        .hotel-name-area {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 50%;
+        }
+
+        .user-ratings{
+        text-align: center;
+        padding: 0.5rem ;
+        justify-self: end;
+        width: 4.0625rem;
+        height: 2.8125rem;
+        border-radius: 4px;
+        }
+    }
+
+    .home-content-a {
+        padding-top: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1.6875rem;
+
+        & div img {
+            height: 28.125rem;
+            width: 45.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .booking {
+            font-family: 'Nunito', sans-serif;
+            border-radius: 0.5rem;
+            width: 21.875rem;
+            height: 13.125rem;
+            padding: 1.625rem 1.8125rem;
+
+            .booking-price {
+                padding-left: 0rem;
+            }
+            .person-room {
+                text-align: right;
+                i {
+                    padding-right: 1rem;
+                }
+            }
+        }
+        .map {
+            margin-top: 1.6875rem;
+            width: 21.875rem;
+            height: 13.125rem;
+            background-color: skyblue;
         }
     }
 }
