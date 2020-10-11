@@ -87,9 +87,9 @@ a {
     cursor: pointer;
 }
 
-.line{
+.line {
     width: 65.5rem;
-    border: 1px dashed #E0E0E0;
+    border: 1px dashed #e0e0e0;
 }
 .btn-booking {
     width: 15.3125rem;
@@ -189,14 +189,34 @@ a {
     }
     .navbottom {
         height: 5rem;
-        & > div {
+        & div {
             height: 100%;
             ul {
                 height: 100%;
                 display: flex;
+
                 li {
-                    width: 100%;
-                    padding: 1.5rem 1rem;
+                    text-align: center;
+                    width: auto;
+                    margin: 1.5rem auto;
+                    
+                    &:first-child {
+                        margin-left: 0rem;
+                        text-align: left;
+                    }
+                    &:last-child {
+                        margin-right: 0rem;
+                        text-align: right;
+                    }
+
+                    a {
+                        p {
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 18px;
+                        }
+                    }
                 }
             }
         }
@@ -372,10 +392,10 @@ a {
         padding: 2.125rem 1.5rem;
         background-color: #ffffff;
 
-        & > div > p{
+        & > div > p {
             font-size: 13px;
-            font-weight:600;
-            line-height:16.32px;
+            font-weight: 600;
+            line-height: 16.32px;
             margin-bottom: 1.3rem;
         }
         li {

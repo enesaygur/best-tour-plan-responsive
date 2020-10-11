@@ -102,7 +102,7 @@ a {
 
 .line {
   width: 65.5rem;
-  border: 1px dashed #E0E0E0;
+  border: 1px dashed #e0e0e0;
 }
 
 .btn-booking {
@@ -227,20 +227,38 @@ a {
   height: 5rem;
 }
 
-#navbar .navbottom > div {
+#navbar .navbottom div {
   height: 100%;
 }
 
-#navbar .navbottom > div ul {
+#navbar .navbottom div ul {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#navbar .navbottom > div ul li {
-  width: 100%;
-  padding: 1.5rem 1rem;
+#navbar .navbottom div ul li {
+  text-align: center;
+  width: auto;
+  margin: 1.5rem auto;
+}
+
+#navbar .navbottom div ul li:first-child {
+  margin-left: 0rem;
+  text-align: left;
+}
+
+#navbar .navbottom div ul li:last-child {
+  margin-right: 0rem;
+  text-align: right;
+}
+
+#navbar .navbottom div ul li a p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
 }
 
 .bread-crump {
