@@ -114,28 +114,23 @@ a {
 #navbar {
     .navtop {
         color: var(--txt-color-dark);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         height: 3.75rem;
-        & > div {
-            height: 100%;
-            width: 100%;
+        align-items: center;
+        & .navtop-right:last-child {
             display: grid;
-            grid-template-columns: 2fr 1fr 2fr;
-            justify-items: flex-start;
+            grid-template-columns: 2fr 1fr;
             align-items: center;
+            justify-items: flex-end;
+            height: 3.75rem;
+            width: 100%;
         }
         p {
             font-size: 0.75rem;
-            text-align: center;
-        }
-        ul {
-            display: flex;
-
-            li {
-                padding: 0.5rem 1rem;
-
-                i {
-                    padding-right: 1rem;
-                }
+            text-align: left;
+            i {
+                padding-right: 1rem;
             }
         }
     }
@@ -162,7 +157,7 @@ a {
             height: 7.5rem;
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 2fr 2fr 1fr;
             align-content: center;
         }
 
@@ -199,7 +194,7 @@ a {
                     text-align: center;
                     width: auto;
                     margin: 1.5rem auto;
-                    
+
                     &:first-child {
                         margin-left: 0rem;
                         text-align: left;
