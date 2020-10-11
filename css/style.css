@@ -13,6 +13,7 @@
           box-sizing: border-box;
 }
 
+html,
 body {
   background: var(--bg-color);
   max-width: 100%;
@@ -67,6 +68,30 @@ ul {
 
 .py-4 {
   padding: 1rem 3rem;
+}
+
+.py1 {
+  padding: 1rem 0rem;
+}
+
+.py2 {
+  padding: 1.5rem 0rem;
+}
+
+.py3 {
+  padding: 2rem 0rem;
+}
+
+.py4 {
+  padding: 3rem 0rem;
+}
+
+.f-size12 {
+  font-size: 12px;
+}
+
+.f-size14 {
+  font-size: 14px;
 }
 
 a {
@@ -307,5 +332,44 @@ a {
   margin-top: 1.6875rem;
   width: 21.875rem;
   height: 13.125rem;
+}
+
+/* Hotel Info */
+#hotel-info .hotel-info-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#hotel-info .hotel-info-menu ul li {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  margin: 1rem 1.688rem;
+  padding-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+#hotel-info .hotel-info-menu ul li:first-child {
+  margin: 1rem 0rem;
+  margin-right: 1.688rem;
+}
+
+#hotel-info .hotel-info-menu ul li:last-child {
+  margin-left: 1.688rem;
+  margin-right: 0rem;
+}
+
+#hotel-info .hotel-info-menu ul li a {
+  font-size: 14px;
+  line-height: 17.57px;
+  color: #333333;
+}
+
+#hotel-info .hotel-info-menu ul li .current {
+  border-bottom: 4px #ec1f46 solid;
+}
+
+#hotel-info .hotel-info-menu ul li .current + a {
+  color: #ec1f46;
 }
 /*# sourceMappingURL=style.css.map */

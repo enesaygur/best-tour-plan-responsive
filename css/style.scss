@@ -11,6 +11,7 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     background: var(--bg-color);
     max-width: 100%;
@@ -60,6 +61,25 @@ ul {
 .py-4 {
     padding: 1rem 3rem;
 }
+.py1 {
+    padding: 1rem 0rem;
+}
+.py2 {
+    padding: 1.5rem 0rem;
+}
+.py3 {
+    padding: 2rem 0rem;
+}
+.py4 {
+    padding: 3rem 0rem;
+}
+
+.f-size12 {
+    font-size: 12px;
+}
+.f-size14 {
+    font-size: 14px;
+}
 
 a {
     text-decoration: none;
@@ -86,7 +106,6 @@ a {
 }
 
 #navbar {
-    
     .navtop {
         color: var(--txt-color-dark);
         height: 3.75rem;
@@ -196,10 +215,10 @@ a {
             font-size: 1.5rem;
             line-height: 30.12px;
             width: 35rem;
-            height:2rem ;
+            height: 2rem;
 
-            & span{
-                margin:1rem;
+            & span {
+                margin: 1rem;
             }
         }
 
@@ -218,13 +237,13 @@ a {
             width: 50%;
         }
 
-        .user-ratings{
-        text-align: center;
-        padding: 0.5rem ;
-        justify-self: end;
-        width: 4.0625rem;
-        height: 2.8125rem;
-        border-radius: 4px;
+        .user-ratings {
+            text-align: center;
+            padding: 0.5rem;
+            justify-self: end;
+            width: 4.0625rem;
+            height: 2.8125rem;
+            border-radius: 4px;
         }
     }
 
@@ -265,3 +284,39 @@ a {
     }
 }
 
+/* Hotel Info */
+#hotel-info {
+    .hotel-info-menu {
+        & ul {
+            display: flex;
+
+            & li {
+                font-family: 'Mulish', sans-serif;
+                font-weight: 700;
+                margin: 1rem 1.688rem;
+                padding-bottom: 1rem;
+                color: var(--secondary-color);
+
+                &:first-child {
+                    margin: 1rem 0rem;
+                    margin-right: 1.688rem;
+                }
+                &:last-child {
+                    margin-left: 1.688rem;
+                    margin-right: 0rem; 
+                }
+                & a {
+                    font-size: 14px;
+                    line-height: 17.57px;
+                    color: #333333;
+                }
+                .current {
+                    & + a {
+                        color: #ec1f46;
+                    }
+                    border-bottom: 4px #ec1f46 solid;
+                }
+            }
+        }
+    }
+}
