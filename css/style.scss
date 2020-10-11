@@ -84,6 +84,12 @@ ul {
 a {
     text-decoration: none;
     color: #ffffff;
+    cursor: pointer;
+}
+
+.line{
+    width: 65.5rem;
+    border: 1px dashed #E0E0E0;
 }
 .btn-booking {
     width: 15.3125rem;
@@ -296,27 +302,93 @@ a {
                 margin: 1rem 1.688rem;
                 padding-bottom: 1rem;
                 color: var(--secondary-color);
-
+                &.current {
+                    border-bottom: 4px #ec1f46 solid;
+                    & a {
+                        color: var(--secondary-color);
+                    }
+                }
                 &:first-child {
                     margin: 1rem 0rem;
                     margin-right: 1.688rem;
                 }
                 &:last-child {
                     margin-left: 1.688rem;
-                    margin-right: 0rem; 
+                    margin-right: 0rem;
                 }
                 & a {
+                    font-family: 'Mulish', sans-serif;
                     font-size: 14px;
                     line-height: 17.57px;
                     color: #333333;
-                }
-                .current {
-                    & + a {
-                        color: #ec1f46;
-                    }
-                    border-bottom: 4px #ec1f46 solid;
+                    font-weight: 700;
                 }
             }
+        }
+    }
+    .small-title {
+        height: 3.125rem;
+        border-radius: 4px 4px 0px 0px;
+        & p {
+            padding: 1rem 1.5rem;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+    /* Info Content */
+    .info-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+    .package-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+
+        li {
+            padding-bottom: 1.5rem;
+
+            p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 15.06px;
+            }
+        }
+        i {
+            margin-right: 1.3rem;
+        }
+    }
+
+    .package-card-3x {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 6rem;
+        align-items: center;
+        justify-content: center;
+        padding: 2.125rem 1.5rem;
+        background-color: #ffffff;
+
+        & > div > p{
+            font-size: 13px;
+            font-weight:600;
+            line-height:16.32px;
+            margin-bottom: 1.3rem;
+        }
+        li {
+            padding-bottom: 1.5rem;
+
+            p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 15.06px;
+            }
+        }
+        i {
+            margin-right: 1.3rem;
         }
     }
 }

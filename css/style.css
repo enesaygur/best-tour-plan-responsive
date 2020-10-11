@@ -97,6 +97,12 @@ ul {
 a {
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.line {
+  width: 65.5rem;
+  border: 1px dashed #E0E0E0;
 }
 
 .btn-booking {
@@ -335,6 +341,10 @@ a {
 }
 
 /* Hotel Info */
+#hotel-info {
+  /* Info Content */
+}
+
 #hotel-info .hotel-info-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,6 +359,14 @@ a {
   color: var(--secondary-color);
 }
 
+#hotel-info .hotel-info-menu ul li.current {
+  border-bottom: 4px #ec1f46 solid;
+}
+
+#hotel-info .hotel-info-menu ul li.current a {
+  color: var(--secondary-color);
+}
+
 #hotel-info .hotel-info-menu ul li:first-child {
   margin: 1rem 0rem;
   margin-right: 1.688rem;
@@ -360,16 +378,95 @@ a {
 }
 
 #hotel-info .hotel-info-menu ul li a {
+  font-family: 'Mulish', sans-serif;
   font-size: 14px;
   line-height: 17.57px;
   color: #333333;
+  font-weight: 700;
 }
 
-#hotel-info .hotel-info-menu ul li .current {
-  border-bottom: 4px #ec1f46 solid;
+#hotel-info .small-title {
+  height: 3.125rem;
+  border-radius: 4px 4px 0px 0px;
 }
 
-#hotel-info .hotel-info-menu ul li .current + a {
-  color: #ec1f46;
+#hotel-info .small-title p {
+  padding: 1rem 1.5rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#hotel-info .info-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+#hotel-info .package-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5rem;
+}
+
+#hotel-info .package-card li {
+  padding-bottom: 1.5rem;
+}
+
+#hotel-info .package-card li p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.06px;
+}
+
+#hotel-info .package-card i {
+  margin-right: 1.3rem;
+}
+
+#hotel-info .package-card-3x {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.125rem 1.5rem;
+  background-color: #ffffff;
+}
+
+#hotel-info .package-card-3x > div > p {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16.32px;
+  margin-bottom: 1.3rem;
+}
+
+#hotel-info .package-card-3x li {
+  padding-bottom: 1.5rem;
+}
+
+#hotel-info .package-card-3x li p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.06px;
+}
+
+#hotel-info .package-card-3x i {
+  margin-right: 1.3rem;
 }
 /*# sourceMappingURL=style.css.map */
