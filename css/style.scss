@@ -89,7 +89,11 @@ a {
 
 .line {
     width: 65.5rem;
-    border: 1px dashed #e0e0e0;
+    border-bottom: 1px dashed #e0e0e0;
+    margin: auto;
+}
+.flex {
+    display: flex;
 }
 .btn-booking {
     width: 15.3125rem;
@@ -223,15 +227,71 @@ a {
     padding: 1rem 0rem;
 }
 
+.flash-offer {
+    height: 1.25rem;
+    width: 4.375rem;
+    font-size: 0.625rem;
+    line-height: 12.55px;
+    text-align: center;
+    padding: 0.25rem 0.35rem;
+    border-radius: 3px;
+    p {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 13px;
+        text-align: left;
+    }
+}
+
+.flash-offer-2 {
+    height: 1.875rem;
+    width: 5.938rem;
+    font-size: 0.625rem;
+    line-height: 12.55px;
+    text-align: center;
+    padding: 0.5rem 0.35rem;
+    border-radius: 3px;
+    p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 15px;
+        text-align: left;
+    }
+}
+
+.flash-offer-3 {
+    height: 1.125rem;
+    width: 4rem;
+    font-size: 0.625rem;
+    line-height: 12.55px;
+    text-align: center;
+    padding: 0.125rem 0.35rem;
+    border-radius: 3px;
+    p {
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 10px;
+        text-align: left;
+    }
+}
+.book-now {
+    padding: 0.625rem 1.625rem;
+}
+
+.stars {
+    color: #f2994a;
+    font-size: 12px;
+}
+
 #home-content {
     .hotel-name {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         height: 6.25rem;
 
-        .stars {
-            color: #f2994a;
-        }
         .hotel {
             font-size: 1.5rem;
             line-height: 30.12px;
@@ -243,15 +303,6 @@ a {
             }
         }
 
-        .flash-offer {
-            height: 1.25rem;
-            width: 4.375rem;
-            font-size: 0.625rem;
-            line-height: 12.55px;
-            text-align: center;
-            padding: 0.25rem 0.35rem;
-            border-radius: 3px;
-        }
         .hotel-name-area {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -406,4 +457,117 @@ a {
             margin-right: 1.3rem;
         }
     }
-}
+
+    .guest-review {
+        h1 {
+            font-family: Mulish;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 45px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        .other-packages {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1.875rem;
+
+            .packages-type-1 {
+                height: 31.25rem;
+                grid-column: 1 / span 2;
+                display: flex;
+                & > div {
+                    height: 31.25rem;
+                    width: 22.813rem;
+
+                    &:first-child {
+                        background: url(/img/image1.jpg) no-repeat center center/cover;
+                        border-radius: 8px 0px 0px 8px;
+                    }
+
+                    &:last-child {
+                        padding: 3rem 1.3rem 2.15rem 2.6rem;
+                        border-radius: 0px 8px 8px 0px;
+
+                        h3 {
+                            margin-top: 6px;
+                        }
+
+                        .text {
+                            margin-top: 1.6rem;
+                        }
+                    }
+                    & > p {
+                        margin-top: 1.625rem;
+                    }
+                    ul li {
+                        margin: 0;
+                        padding-top: 0.6rem;
+                    }
+                    .price {
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 30px;
+                        text-align: left;
+                        width: 55%;
+                    }
+                }
+            }
+
+            .packages-type-2 {
+                height: 31.25rem;
+                & > div {
+                    width: 21.875rem;
+                    height: 50%;
+
+                    &:first-child {
+                        background: url(/img/image1.jpg) no-repeat center center/cover;
+                        border-radius: 8px 8px 0px 0px;
+                        padding-top: 1.625rem;
+                    }
+
+                    &:last-child {
+                        padding: 1.875rem 1.3rem 1.5rem 2rem;
+                        border-radius: 0px 0px 8px 8px;
+
+                        & h3 {
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 23px;
+                            text-align: left;
+                        }
+
+                        & ul li {
+                                font-family: Mulish;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 15px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                padding-top: 0.6rem;
+                            }
+                        
+                        & > p {
+                            margin-top: 1.625rem;
+                        }
+
+                        & .price {
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 30px;
+                            text-align: left;
+                            width: 55%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} /* hotel info end */
