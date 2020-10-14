@@ -112,6 +112,10 @@ a {
   display: flex;
 }
 
+.z-index1 {
+  z-index: 2;
+}
+
 .btn-booking {
   width: 15.3125rem;
   height: 2.8125rem;
@@ -325,7 +329,15 @@ a {
 }
 
 .book-now {
-  padding: 0.625rem 1.625rem;
+  padding: 0.6rem 1.5rem;
+  width: 7rem;
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  border-radius: 4px;
 }
 
 .stars {
@@ -666,4 +678,134 @@ a {
 }
 
 /* hotel info end */
+#bottom .newsletter {
+  width: 100%;
+  height: 16rem;
+  padding: 6rem;
+  position: relative;
+}
+
+#bottom .newsletter::before {
+  content: '';
+  background: url(/img/view.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#bottom .newsletter > div {
+  width: 50rem;
+  height: 6rem;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  padding-left: 5rem;
+}
+
+#bottom .newsletter > div .search-bar {
+  margin-left: 10rem;
+}
+
+#bottom .newsletter > div .search-bar input[type='text'] {
+  padding-left: 1rem;
+  height: 3.4rem;
+  width: 15rem;
+}
+
+#bottom .newsletter > div .search-bar input {
+  border-radius: 0.6px;
+}
+
+#bottom .newsletter > div .search-bar button {
+  color: #ffffff;
+}
+
+#bottom .newsletter > div .btn-search {
+  width: 4rem;
+  height: 3.4rem;
+  border-radius: 0px 6px 6px 0px;
+  margin-left: -5px;
+  margin-top: -2px;
+  border: 3px solid var(--secondary-color);
+}
+
+#bottom .newsletter > div .subs {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+}
+
+#bottom .newsletter > div .news-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: left;
+}
+
+#bottom #other-activities {
+  padding: 3.75rem 0rem 6.125rem 0rem;
+}
+
+#bottom #other-activities .other-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 3.5rem;
+}
+
+#bottom #other-activities .other-activities {
+  width: 16rem;
+  height: 16rem;
+  padding-top: 8rem;
+  padding-left: 1.625rem;
+  color: #ffffff;
+  border-radius: 6px;
+  background: url(/img/hiking.jpg) no-repeat center center/cover;
+}
+
+#bottom #other-activities .other-activities .p-content {
+  width: 9rem;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
+#bottom #other-activities .other-activities-2 {
+  width: 16rem;
+  height: 16rem;
+  padding-top: 8rem;
+  padding-left: 1.625rem;
+  color: #ffffff;
+  border-radius: 6px;
+  background: url(/img/golf.jpg) no-repeat center center/cover;
+}
+
+#bottom #other-activities .other-activities-2 .p-content {
+  width: 9rem;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
+#bottom #other-activities .activities-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.8rem;
+}
 /*# sourceMappingURL=style.css.map */
