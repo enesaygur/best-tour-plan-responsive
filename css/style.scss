@@ -13,6 +13,7 @@
 
 html,
 body {
+    overflow-x: hidden;
     background: var(--bg-color);
     max-width: 100%;
     margin: 0px auto;
@@ -48,7 +49,9 @@ ul {
 .float-clear {
     clear: both;
 }
-
+.my-1 {
+    margin: 0.75rem 0rem;
+}
 .py-1 {
     padding: 1rem 1rem;
 }
@@ -99,7 +102,12 @@ a {
 .z-index1 {
     z-index: 2;
 }
-
+.btn {
+    width: 10rem;
+    height: 3.125rem;
+    border: 3px solid var(--secondary-color);
+    border-radius: 0.25rem;
+}
 .btn-booking {
     width: 15.3125rem;
     height: 2.8125rem;
@@ -118,6 +126,9 @@ a {
     font-family: 'Luckiest Guy', sans-serif;
     font-size: 1.5rem;
     line-height: 1.5rem;
+    span {
+        color: #ec1f46;
+    }
 }
 
 #navbar {
@@ -166,7 +177,7 @@ a {
             height: 7.5rem;
             width: 100%;
             display: grid;
-            grid-template-columns: 2fr 2fr 1fr;
+            grid-template-columns: 2fr 3fr 1fr;
             align-content: center;
         }
 
@@ -596,13 +607,13 @@ a {
 
         &::before {
             content: '';
-            background: url(/img/view.jpg) no-repeat center center/cover;
+            background: url(/img/subs-background.jpg) no-repeat center center/cover;
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            opacity: 0.4;
+            background-color: rgba(0, 0, 0, 0.8);
         }
         & > div {
             width: 50rem;
@@ -618,12 +629,9 @@ a {
                     padding-left: 1rem;
                     height: 3.4rem;
                     width: 15rem;
+                    color: #bdbdbd;
+                    border-radius: 4px;
                 }
-
-                input {
-                    border-radius: 0.6px;
-                }
-
                 button {
                     color: #ffffff;
                 }
@@ -644,6 +652,7 @@ a {
                 font-weight: 300;
                 line-height: 30px;
                 text-align: left;
+                color: #ffffff;
             }
 
             .news-title {
@@ -652,6 +661,7 @@ a {
                 font-weight: 600;
                 line-height: 45px;
                 text-align: left;
+                color: #ffffff;
             }
         }
     }
@@ -704,10 +714,215 @@ a {
             }
         }
 
-        .activities-grid{
+        .activities-grid {
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-gap:1.8rem;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.8rem;
+        }
+    }
+}
+/* Footer */
+#footer {
+    background: #0a223d;
+    color: #ffffff;
+    padding: 6.25rem 10rem 3rem 10rem;
+
+    .footer {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+
+        .item1 {
+            font-family: Luckiest Guy;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 64px;
+            line-height: 64px;
+            padding-top: 2rem;
+            span {
+                color: #ec1f46;
+            }
+        }
+
+        .item2 {
+            width: 10rem;
+            h3 {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                padding-bottom: 0.75rem;
+            }
+            ul li {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17, 57px;
+                color: #e0e0e0;
+                padding-top: 0.5rem;
+            }
+        }
+
+        .item3 {
+            width: 15.625rem;
+            h3 {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                padding-bottom: 0.75rem;
+            }
+            ul li {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17, 57px;
+                color: #e0e0e0;
+                padding-top: 0.5rem;
+            }
+
+            i {
+                padding-left: 0.75rem;
+            }
+        }
+
+        .item4 {
+            width: 12.5rem;
+            h3 {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                padding-bottom: 0.75rem;
+            }
+
+            ul li {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17, 57px;
+                color: #e0e0e0;
+                padding-top: 0.5rem;
+            }
+        }
+
+        .item5 {margin-top: 4rem;
+            grid-column: 1 / span 2;
+            width: auto;
+
+            h3 {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                padding-bottom: 0.75rem;
+            }
+            i {
+                padding-right: 1rem;
+            }
+            ul li {
+                padding-top: 1.25rem;
+                color: #e0e0e0;
+                word-wrap: break-word;
+                font-family: Mulish;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: left;
+                p {
+                    padding-left: 2rem;
+                }
+            }
+        }
+
+        .item6 {margin-top: 4rem;
+            grid-column: 3 / span 5;
+            width: 35rem;
+            height: auto;
+            h3 {
+                width: 20rem;
+                font-family: ulish;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                padding-bottom: 0.75rem;
+            }
+            input[type='text'] {
+                width: 16rem;
+                height: 3.125rem;
+                color: #bdbdbd;
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                padding: 1.125rem 1.4rem;
+                border-radius: 4px;
+            }
+            input[name='phone'] {
+                margin-left: 1.875rem;
+            }
+            textarea {
+                padding: 1.125rem 1.4rem;
+                width: 34rem;
+                color: #bdbdbd;
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                border-radius: 4px;
+            }
+            button {
+                margin-top: 1.3rem;
+            }
+            .required {
+                text-align: right;
+                width: 100%;
+                color: #e0e0e0;
+                align-self: center;
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+
+        .item7 {
+            margin-top: 5rem;
+            grid-column: 2 / 4;
+            text-align: left;
+            color: #ffffff;
+            ul li {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                padding-left: 2rem;
+            }
+        }
+
+        .item8 {
+            margin-top: 5rem;
+            grid-column: 4 / span -1;
+            justify-self: end;
+
+            text-align: right;
+            margin-right: 2rem;
         }
     }
 }
