@@ -1,0 +1,243 @@
+/* Max 1100px */
+@media (max-width: 1100px) {
+    #home-content {
+        .home-content-a {
+            grid-template-columns: repeat(2, 1fr);
+            .image {
+                grid-column: 1 / span 2;
+                img {
+                    width: 98%;
+                }
+            }
+
+            .infos {
+                display: flex;
+                grid-column: 1 / span 2;
+
+                .booking {
+                    width: 98%;
+                    margin-right: 1rem;
+                }
+                .map {
+                    width: 98%;
+                    margin-top: 0px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+    #hotel-info {
+        .guest-review {
+            .other-packages {
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1rem;
+                justify-items: center;
+
+                .packages-type-1 {
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #bottom {
+        .newsletter {
+            padding: 6rem 1rem;
+
+            & > div {
+                padding-left: 1rem;
+            }
+        }
+        #other-activities {
+            .activities-grid {
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                grid-gap: 1rem;
+            }
+        }
+    }
+
+    #footer {
+        padding: 3.125rem 5rem 1.5rem 5rem;
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            width: 100%;
+            height: 100%;
+
+            .item1 {
+                grid-column: 1 / 2;
+                width: 100%;
+            }
+            .item2 {
+                grid-column: 2 / 3;
+                width: 100%;
+            }
+            .item3 {
+                grid-column: 1 / 2;
+                width: 100%;
+            }
+            .item4 {
+                grid-column: 2 / 3;
+                width: 100%;
+            }
+            .item5 {
+                grid-column: 1 / 2;
+                width: 100%;
+            }
+            .item6 {
+                grid-column: 2 / 3;
+                width: 100%;
+
+                form > div {
+                    display: inline-block;
+                    input[type='text'] {
+                        width: 100%;
+                    }
+                    input[name='phone'] {
+                        margin: 0px;
+                        margin-top: 1rem;
+                    }
+                    textarea {
+                        padding: 1.125rem 1.4rem;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .item7 {
+                grid-column: 1 / 2;
+                width: 100%;
+            }
+            .item8 {
+                grid-column: 2 / 3;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Max 700px */
+@media (max-width: 700px) {
+    /* Home Content */
+    #home-content {
+        .home-content-a {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+            .image {
+                img {
+                    width: 98%;
+                }
+            }
+
+            .infos {
+                display: block;
+                grid-column: 1 / span 2;
+
+                .booking {
+                    width: 98%;
+                    margin-right: 1rem;
+                }
+                .map {
+                    margin-top: 0.25rem;
+                    width: 98%;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+    /* Hotel info */
+    #hotel-info {
+        .guest-review {
+            .other-packages {
+                grid-template-columns: 1fr;
+                grid-gap: 0.5rem;
+                justify-items: center;
+
+                .packages-type-1 {
+                    justify-content: center;
+                    height: 25rem;
+                    width: 21.875rem;
+                    display:contents;
+                    grid-column: 1;
+                    & > div {
+                        height: 15.625rem;
+                        width: 21.875rem;
+                        &:first-child {
+                            border-radius: 8px 8px 0px 0px;
+                            
+                            
+                        }
+
+                        &:last-child {
+                            padding: 3rem 1.3rem 2.15rem 2.6rem;
+                            border-radius: 0px 0px 8px 8px;
+                           
+
+                            h3 {
+                                margin-top: 6px;
+                            }
+
+                            .text {
+                                margin-top: 1.6rem;
+                            }
+                        }
+                    }
+                }
+
+                .packages-type-2 {
+                    height: 30rem;
+                    & > div {
+                        width: 21.875rem;
+                        height: 50%;
+
+                        &:first-child {
+                            background: url(/img/image1.jpg) no-repeat center center/cover;
+                            border-radius: 8px 8px 0px 0px;
+                            padding-top: 1.625rem;
+                        }
+
+                        &:last-child {
+                            padding: 1.875rem 1.3rem 1.5rem 2rem;
+                            border-radius: 0px 0px 8px 8px;
+
+                            & h3 {
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 23px;
+                                text-align: left;
+                            }
+
+                            & ul li {
+                                font-family: Mulish;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 15px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                padding-top: 0.6rem;
+                            }
+
+                            & > p {
+                                margin-top: 1.625rem;
+                            }
+
+                            & .price {
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 30px;
+                                text-align: left;
+                                width: 55%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
